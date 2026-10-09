@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-editorial: 'Playfair Display', Georgia, serif;
+  --font-handwriting: 'Caveat', cursive, sans-serif;
+  
+  /* Light Editorial Studio Design System Palette */
+  --color-canvas: #F7F7F5;
+  --color-canvas-card: #FFFFFF;
+  --color-canvas-subtle: #F0EFEB;
+  --color-charcoal: #171717;
+  --color-muted: #686868;
+  --color-coral: #E96B50;
+  --color-coral-dark: #d5593f;
+  --color-muted-sage: #B8D9CF;
+  --color-border: #E2E0DC;
+  --color-border-dark: #171717;
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F7F7F5;
+  color: #171717;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F7F7F5;
+  color: #171717;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+.font-editorial {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-handwriting {
+  font-family: 'Caveat', cursive, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F7F7F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D0CEC9;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A8A6A0;
+}
+
+/* Selection styling */
+::selection {
+  background-color: rgba(233, 107, 80, 0.22);
+  color: #171717;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Minimalist studio tension animations */
+@keyframes tensionThreadOscillate {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  25% { transform: translateY(-2px) rotate(0.3deg); }
+  75% { transform: translateY(2px) rotate(-0.3deg); }
+}
+
+@keyframes paperDriftSlow {
+  0%, 100% { transform: translateY(0px) rotate(var(--rot, 0deg)); }
+  50% { transform: translateY(-4px) rotate(calc(var(--rot, 0deg) + 0.8deg)); }
+}
+
+@keyframes threadVibrateHigh {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-1px); }
+  40% { transform: translateX(1px); }
+  60% { transform: translateX(-0.5px); }
+  80% { transform: translateX(0.5px); }
+}
+
+@keyframes organicExpandContract {
+  0%, 100% { transform: scale(0.88); opacity: 0.45; }
+  50% { transform: scale(1.12); opacity: 0.95; }
+}
+
+.animate-thread-oscillate {
+  animation: tensionThreadOscillate 8s ease-in-out infinite;
+}
+
+.animate-paper-drift {
+  animation: paperDriftSlow 7s ease-in-out infinite;
+}
+
+.animate-thread-vibrate {
+  animation: threadVibrateHigh 0.25s linear infinite;
+}
+
+.animate-breath-halo {
+  animation: organicExpandContract 8s ease-in-out infinite;
+}
+
+/* Minimalist paper tape */
+.archival-tape {
+  background: rgba(226, 224, 220, 0.85);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+}
