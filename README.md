@@ -7,17 +7,6 @@ An interactive frontend experience exploring the invisible pressures students ca
 
 ---
 
-## 🖼️ Preview
-
-<!-- Upload your screenshot to the repository first.
-     Recommended path: screenshots/pressure-points-home.png -->
-
-![Pressure Points Homepage](./screenshots/pressure-points-home.png)
-
-*The invisible weight behind the words: "You said you were fine."*
-
----
-
 ## 📌 About the Project
 
 **Pressure Points** is a creative frontend project built around the theme of student pressure and concealed cognitive load.
@@ -26,7 +15,7 @@ The experience explores the emotional side of student life through bold typograp
 
 The goal is to communicate a meaningful message through design and create an engaging digital experience around pressures that often go unnoticed.
 
-## ✨ Highlights
+## ✨ Features
 
 - 🎨 Minimal, editorial-inspired interface
 - 🖋️ Bold typography and contrasting accent colors
@@ -42,8 +31,6 @@ The goal is to communicate a meaningful message through design and create an eng
 - **Markup:** HTML
 - **Deployment:** Vercel
 
-> Add any additional frameworks or libraries only if they are actually used in the project.
-
 ## 🌐 Live Demo
 
 Experience the project here:
@@ -58,7 +45,7 @@ Experience the project here:
 git clone https://github.com/harxitsingh/pressure-points.git
 ```
 
-### 2. Open the project folder
+### 2. Navigate to the project folder
 
 ```bash
 cd pressure-points
@@ -76,13 +63,13 @@ npm install
 npm run dev
 ```
 
-*Check `package.json` for the exact commands supported by your project.*
+> Check `package.json` for the exact commands supported by your project.
 
-## 🎯 Purpose
+## 🎯 Project Purpose
 
 Pressure Points explores how frontend design can communicate more than information.
 
-Through typography, spacing, hierarchy, and visual storytelling, the project highlights the invisible expectations and emotional burdens students may experience.
+Through typography, spacing, visual hierarchy, and storytelling, the project highlights the invisible expectations and emotional burdens students may experience.
 
 ## 👨‍💻 Author
 
